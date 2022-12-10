@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+<h1>{{ username }}</h1>
+<h3>Ваши продукты</h3>
+{% for product in products %}
+    <p style="color: green"> {{ product.name }}  | {{ product.price }}</p>
+{% endfor %}
+</body>
+</html>
