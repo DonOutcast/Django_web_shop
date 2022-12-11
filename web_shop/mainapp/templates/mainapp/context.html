@@ -5,10 +5,10 @@
     <title>{{ title }}</title>
 </head>
 <body>
-<h1>{{ username }}</h1>
+<h1>{{ username|upper }}</h1>
 <h3>Ваши продукты</h3>
 {% for product in products %}
-    <p style="color: green"> {{ product.name }}  | {{ product.price }}</p>
+    <p style="color: coral"> {{ product.name }}  | {{ product.price }}</p>
 {% endfor %}
 </body>
 </html>

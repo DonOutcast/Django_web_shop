@@ -11,9 +11,8 @@ def products(request):
 
 def temp(request):
     context = {
-        'name': "Misha",
-        'friends': ["shamil", "ildar", "sontion"]
-
+        "name": "Santion",
+        "friends": ["shamil", "misha", "bylik", 'some girl of my friend in intra']
     }
     return render(request, 'mainapp/temp.html', context=context)
 
