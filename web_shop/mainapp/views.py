@@ -1,12 +1,15 @@
 from django.shortcuts import render
-
+from mainapp.models import Product, ProductCategory
 
 def main(request):
     return render(request, 'mainapp/index.html')
 
 
 def products(request):
-    return render(request, 'mainapp/products.html')
+    context = {
+        "products": Product.objects.all(),
+    }
+    return render(request, 'mainapp/products.html', context=context)
 
 
 def temp(request):
